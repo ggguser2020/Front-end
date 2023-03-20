@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body id="body1">
+<div id="div1">
+    <p id="p1">这是一个段落。</p>
+    <p id="p2">这是另一个段落。</p>
+</div>
+
+</body>
+</html>
+<script> //创建元素节点并加入页面
+    // 1、创建一个 p 标签元素节点，
+    let para = document.createElement("p");
+    // 2、创建一个文本节点，内容为"这是一个新段落。
+    let node = document.createTextNode("这是一个新段落。");
+    // 3、将文本节点装入 P 标签的最后一个子节点
+    para.appendChild(node);
+    // 4、查找 ID 为body1的元素节点
+    let element = document.getElementById("body1");
+    // 5、将刚才装入了文本节点的 P 标签装入 ID 为body1的元素节点最后一个子节点
+    element.appendChild(para);
+
+    document.onclick=function (e){
+        let oEvent=e||event;
+        oEvent.stopPropagation(); //用此方法阻止事件流冒泡连续产生
+    }
+    document.getElementsByName()
+document.onfullscreenchange
+document.getElementsByTagName()
+</script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>😈 what's this! Angela's Personal Site</title>
+
+    <!--href后的  css/xxx.xx  当前目录下的css文件夹下的styles.css，
+    如果要写从根目录下的绝对路径可以写成  /css/xxx.xx
+      如果要从上级目录读取，href="../css/styles.css"-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<!--学习进度   P21   -->
+<body>
+<table cellspacing="20">  <!--将tr,td放入table标签，cellspacing属性已弃用-->
+    <tr>   <!--表格内的行标签 table row 缩写-->
+        <td>   <!--表格内的列标签 table Data 缩写-->
+            <img src="img/angela yu.png" alt="angela profile picture">  <!--alt图片不能显示时的代替文字，也用于浏览器查语义化-->
+        </td>
+        <td>
+            <h1>Angela Yu</h1>
+            <!--<em>对浏览器查找信息的语义化标签，同<i>；<strong>浏览器查找信息的语义化标签，同<b>-->
+            <p><em>Founder and CTO of <strong><a href="https://www.appbrewery.co">The App Brewery</a></strong>.</em></p>
+            <p>I am an IOS and Web Developer. I love coffee and brew my own beers.</p>
+        </td>
+    </tr>
+</table>
+<hr>
+<h3>Books and Teaching</h3>
+<ul> <!--无序列表-->
+    <li>The Complete IOS App Development Bootcamp</li>  <!--列表项-->
+    <li>The Complete Web Development Bootcamp</li>
+</ul>
+<hr>
+<h3>Work Experience</h3>
+<table>
+    <!--<thead>,<tbody>,<tfoot>分开同使用可使我们更方便控制表可笑的不同位置，例如类似excel的表头不动，表格滚动-->
+    <thead>     <!--表格标题 默认为粗体,但要配合<th>-->
+    <tr>
+        <th>Dates</th>   <!--<th>定义表格内的表头单元格，也可以直接放在<thead>以外的<tr>内，其中的文字会同自动加粗-->
+        <th>Word</th>
+    </tr>
+    </thead>
+    <tbody>     <!--表格主体-->
+    <tr>
+        <td>2010-2013</td>
+        <td>Lead developer at Tempo App</td>
+    </tr>
+    <tr>
+        <td>2010</td>
+        <td>Researcher at The Institute of Cognitive Neuroscience</td>
+    </tr>
+    </tbody>
+    <!--<h3>Skills</h3>  表格内放H3这类码会显示在<thead>或表格的上方-->
+    <tfoot>     <!--表格页脚 当使用了<thead>,<tbody>,<tfoot>任一项时必须有其它项-->    </tfoot>
+</table>
+<hr>
+<h3>Skills</h3>
+<table>
+    <tr>
+        <td>
+            <table> <!--<tr>内的列嵌套<table>实现Skills的2列显示-->
+                <tr>
+                    <td>iOS Development</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Photography</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+        <table>
+            <tr>
+                <td>iOS Development</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Photography</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+<hr>
+<a href="html/hobbies.html">My Hobbies</a>
+<a href="html/contact-me.html">Contact-Me</a>
+</body>
+</html>

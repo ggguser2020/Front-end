@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: black solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas_1" width="600" height="1200"></canvas>
+    <script>
+        ///**@type{HTMLCanvasElement}*/
+        let context = document.getElementById('canvas_1');
+        let ctx = context.getContext('2d');
+
+        //设轩渐变区域的长度，超过区域长度后颜色进行延展，但不会渐变，将此渐变赋值给下方的图形后才可显示
+        let gdient = ctx.createLinearGradient(0,0, 0,100);
+        gdient.addColorStop(0, 'blue');//设渐变中颜色的百分比，1为最大
+        gdient.addColorStop(.5, 'cyan');
+        gdient.addColorStop(1,'orange');
+
+        //给fillstyle赋值上方设置好的渐变变量：gdient，
+        ctx.fillStyle = gdient;
+        ctx.fillRect(20, 20, 200, 100);
+
+        //下方代码为给边框渐变
+        ctx.strokeStyle =gdient;
+        ctx.strokeRect(300, 20, 200, 100);
+
+        //第二行的矩形,颜色不会保持100级的纯色
+        ctx.fillStyle=gdient;
+        ctx.fillRect(20,140,200,100);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+.nav {
+    width: 100%;
+    height: 104px;
+    border: 1px solid #d5d5d5;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left:0;
+}
+
+.wrap {
+    width: 1196px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 200px;
+    height: 103px;
+    /*background-color: aqua;*/
+    float: left;
+}
+
+.logo img {
+    margin-top: 26px;
+}
+
+.nav-bar {
+    width: 996px;
+    height: 103px;
+    /*background-color: aliceblue;*/
+    float: left;
+}
+
+.nav-bar-top {
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+    /*background-color: bisque;*/
+
+}
+
+
+.nav-bar-top ul {
+    float: right;
+    list-style-type: none;
+    margin-bottom: 0;
+
+}
+
+.nav-bar-top li {
+    float: left;
+}
+
+.nav-bar-top a {
+    color: #9f9f9f;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.nav-bar-top span {
+    color: #ddd;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.car {
+    margin-left: 10px;
+}
+
+.nav-bar-top a:hover {
+    color: coral;
+}
+
+.nav-bar-top .ami-active {
+    color: chocolate;
+}
+
+.nav-bar-bottom {
+    width: 100%;
+    height: 52px;
+    /*background-color: #afaf16;*/
+    margin-top: 21px;
+}
+
+.nav-bar-bottom li {
+    float: left;
+}
+
+.nav-bar-bottom ul {
+    float: left;
+    list-style-type: none;
+}
+
+.nav-bar-bottom a {
+    text-decoration: none;
+}
+
+    .main-nav {
+        width: 680px;
+        height: 100%;
+        float: right;
+        /*  background-color: aqua;*/
+    }
+    .main-nav a {
+        font-size: 16px;
+        color: #000;
+        padding: 0  20px 20px;
+
+    }
+    .main-nav li:hover > .nav-bar-list {
+        display: block;
+    }
+
+
+.search {
+    width: 188px;
+    height: 100%;
+    float: right;
+    /*background-color: red;*/
+    vertical-align: middle;
+}
+
+.search input {
+    width: 125px;
+    height: 22px;
+    /*background-color: chocolate;*/
+    float: right;
+    padding: 1px 0;
+    margin-top: 12px;
+    /*border: none;*/
+
+}
+
+.search button {
+    width: 55px;
+    height: 28px;
+    /*background-color: aqua;*/
+    float: right;
+    padding: 1px 0;
+    margin-top: 12px;
+    border: none;
+}
+.car i {
+    font-size: 18px;
+}
+
+.nav-bar-list {
+    width: 100%;
+    height: 250px;
+    background-color: #55a532;
+    border-top: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 104px;
+    display: none;
+}
+/*----------------------------------------------------*/
+.carousel{
+    width: 100%;
+    height: 600px;
+    background-image:  url("img/2020-12-03 03 16 15.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+
+
+}
+
+.star{
+    width: 100%;
+    height: 451px;
+    background-color: #ffffff;
+    margin-top: -30px;
+
+}
+    .wrap{
+
+    }
+    .title {
+        text-align: center;
+        padding: 35px;
+        margin: 0;
+        font-weight: normal; /*字体宽度*/
+        letter-spacing: 10px; /*字体间距*/
+        font-size: 30px;
+    }
+
+        .star-box{
+            width: 100%;
+            height: 270px;
+            /*background-color: #9a6e3a;*/
+            /*position: relative;  */
+        }
+        .star-box>div{
+            width: 390px;
+            height: 270px;
+            /*background-color: #0086b3;*/
+            float: left;
+            position: relative;
+        }
+        .star-box>div:nth-child(2){
+            margin: 0 13px;
+        }
+        .star-box ul{
+            position: absolute;
+            top: 90px;
+            left: 170px;
+            font-size: 16px;
+            list-style-type: none;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .star-box span{
+            position: relative;
+            top: -4px;
+            /*left: -3px;*/
+            padding-right: 10px;
+
+        }
+        .star-box li{
+            height: 22px;
+        }

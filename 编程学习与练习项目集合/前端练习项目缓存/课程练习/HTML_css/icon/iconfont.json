@@ -1,0 +1,128 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1306",
+      "name": "购物车空",
+      "font_class": "gouwuchekong",
+      "unicode": "f0179",
+      "unicode_decimal": 983417
+    },
+    {
+      "icon_id": "57352",
+      "name": "天猫-无忧退换货",
+      "font_class": "tianmaowuyoutuihuanhuo",
+      "unicode": "f0082",
+      "unicode_decimal": 983170
+    },
+    {
+      "icon_id": "371797",
+      "name": "空间",
+      "font_class": "kongjian",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "677569",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "797082",
+      "name": "对话",
+      "font_class": "duihua",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "908544",
+      "name": "免运费",
+      "font_class": "mianyunfei",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "1306473",
+      "name": "更多",
+      "font_class": "gengduo-2",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "2418243",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "5315865",
+      "name": "退货退款",
+      "font_class": "tui",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "5482986",
+      "name": "放大镜",
+      "font_class": "fangdajing1",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "5905756",
+      "name": "更多",
+      "font_class": "gengduo1",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "6275359",
+      "name": "定位",
+      "font_class": "icon-test",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "8802642",
+      "name": "帮助",
+      "font_class": "bangzhu",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "11746730",
+      "name": "放大镜",
+      "font_class": "fangdajing2",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "13468927",
+      "name": "返回顶部",
+      "font_class": "fanhuidingbu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "14055544",
+      "name": "空间",
+      "font_class": "kongjian1",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "14167191",
+      "name": "更多",
+      "font_class": "gengduo2",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    }
+  ]
+}

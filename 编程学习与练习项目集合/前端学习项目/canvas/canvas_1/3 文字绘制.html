@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    canvas{
+        border: 2px red solid;
+    }
+</style>
+</head>
+<body>
+    <canvas id="cvs"></canvas>
+    <script defer>
+        /**@type{HTMLCanvasElement}*/
+        const ctx=document.getElementById('cvs');
+        /*1、这里使用了JS方式对canvas进行宽高设置，而非标签中进行属性写入。
+        2、不能使用连写方式进行(const ctx=document.getElementById('cvs').getContext('2d');)，
+        一定要分开写并将宽高设置放在ctx=document.getElementById('cvs');  和 .getContext('2d')
+        中间
+        另外JS方式写入时加入不加PX等
+        建议学习MDN官方，也是分开写的。连写有时会造成一些问题*/
+        ctx.width=600;
+        ctx.height=300;
+        const cc=ctx.getContext('2d');
+        cc.font='48px 宋体';
+
+        //下方对齐属性以fillText()中设置的X轴为原点，
+        cc.textAlign='left';
+
+        /*300，150代表文字起始的位置X y轴，做为文字的左下角的原点。
+        350 可选，做为绘制最大宽度，不管文字是否将其满了都会占据这个宽度，
+        如超过会自自缩小文字而不管.font()中的设置，注意：缩小的只是宽度，高度不变
+        */       
+        cc.fillText('这里是文字',300,150);       
+    </script>    
+</body>
+</html>

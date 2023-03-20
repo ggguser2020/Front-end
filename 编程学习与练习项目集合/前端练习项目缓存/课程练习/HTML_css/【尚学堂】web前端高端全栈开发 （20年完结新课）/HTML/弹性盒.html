@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .box{
+            width: 100%;
+            height: 200px;
+            background-color:darkcyan;   
+            
+            display: -webkit-flex;  /* 属性兼容设置 */
+            display: flex;    /* 设置弹性盒,默认元素水平排列 */
+            align-items: center;   /* 居中对齐弹性盒 */
+            justify-content: space-between;     /* 弹性盒的分布方式，左，右，居中，分布式，分布式左右留白 */    
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            
+        }
+        .box flex-item{
+            width: 100px;
+            height: 125px;
+            flex-grow: 1;   /* box下的全部flex-item的各自占位比例 */
+        }
+        p{
+            text-align: center;   /* 文字与上级元素的对齐 */
+            margin: 0;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="flex-item">
+            <a href="#"></a>
+            <img src="https://img.kukan5.com/pic/uploadimg/2018-4/a2403bc9a9f80d030d4011af07452b01.jpg" alt="">
+            <p>TS</p>
+        </div>        
+
+
+        <div class="flex-item">
+            <a href="#"></a>
+            <img src="https://img.kukan5.com/pic/uploadimg/2018-4/a2403bc9a9f80d030d4011af07452b01.jpg" alt="">
+            <p>TS</p>
+        </div>        
+
+        <div class="flex-item">
+            <a href="#"></a>
+            <img src="https://img.kukan5.com/pic/uploadimg/2018-4/a2403bc9a9f80d030d4011af07452b01.jpg" alt="">
+            <p>TS</p>
+        </div>        
+
+
+        <div class="flex-item">
+            <a href="#"></a>
+            <img src="https://img.kukan5.com/pic/uploadimg/2018-4/a2403bc9a9f80d030d4011af07452b01.jpg" alt="">
+            <p>TS</p>
+        </div>        
+
+
+        <div class="flex-item">
+            <a href="#"></a>
+            <img src="https://img.kukan5.com/pic/uploadimg/2018-4/a2403bc9a9f80d030d4011af07452b01.jpg" alt="">
+            <p>TS</p>
+        </div>        
+    </div>
+</body>
+</html>

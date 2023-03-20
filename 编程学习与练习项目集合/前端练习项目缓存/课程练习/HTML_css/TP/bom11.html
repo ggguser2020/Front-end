@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script src="bom1.js" type="text/javascript"></script>-->
+</head>
+
+<body>
+    <button id="btn">按钮</button>
+    <button name="btn">按钮</button>
+    <button class="btn">按钮</button>
+</body>
+</html>
+<script>
+    //下方代码最后要加[0]是因为TagName有重名，所以getElement 维护了一个活动列表数组，里面有所有此名的元素，所以以数组下标[0]指定了第一个此名元素被点击时，调用函数。
+    let btn = document.getElementsByTagName("button")[0];
+    btn.onclick = function () {
+        alert("111");
+    }
+
+    document.getElementById();             //id有唯一性
+    documents.getelementsByClassName();   //class可以有多个
+    document.getElementsByTagName()      //TabName可以有多个
+
+</script>

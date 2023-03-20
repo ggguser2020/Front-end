@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /*伪元素：将p标签现有内容之后插入一个ico文字，并将新内容看作一个单独的元素*/
+        p::after {
+            content: "\ea50";
+            font-family: "icomoom";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        div {
+            width: 300px;
+            height: 50px;
+            position: relative;
+            border: #63a35c 1px solid;
+        }
+
+        span {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 15px;
+            right: 20px;
+            border-right: cadetblue 3px solid;
+            border-bottom: cadetblue 3px solid;
+            transition: 0.3s;
+            transform:rotate(45deg);
+        }
+        span:hover{
+            transform:rotate(225deg);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--span内容为空，span这个元素在，所以css设置了span边框-->
+    <span></span>
+</div>
+
+
+</body>
+</html>

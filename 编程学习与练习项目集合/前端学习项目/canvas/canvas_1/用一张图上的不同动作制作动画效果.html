@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas_1" width="200" height="280"></canvas>
+    
+    <script>
+        /**@type{HTMLCanvasElement}*/
+        const canvas=document.getElementById('canvas_1');
+        const ctx=canvas.getContext('2d');
+
+        const img=new Image();
+        img.src='../img/walk.png';
+
+        img.onload=function(){
+            try {  //如这样写在方法内部的话不会被catch到                
+                let i=0;
+                //利用定时器循环裁切图片不同位置
+                setInterval(() => {
+                    //重载方法，参数分别为图像，被裁切坐标XY，被裁切宽高，显示坐标XY，图片显示的宽高
+                    ctx.drawImage(img,i*160,0,151,285,10,0,160,285); 
+                    i++;
+                }, 100);
+                 
+            } catch (InvalidStateError) {
+                console.log("222");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas_1" width="500" height="500">你的浏览器不支持Canvas!</canvas>
+
+    <script>
+        //
+        //
+        // 用下面的方法样的函数就进行属性传，会影响到图形与路径。
+        // ctx.scale()，ctx.rotate()，ctx.translate()，ctx.transform()。
+        // 图形可画多个不用beginAge();
+        //
+        //
+
+        /**@type{HTMLCanvasElement}*/
+        const canvas = document.getElementById('canvas_1');
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'red';
+        //rotate()先设置后，才可用fillRect()绘制，且rotate中心点为canvas画布左角0,0
+        //ctx.rotate(45 * Math.PI / 180);
+        //虽然已旋转，但是translate的移动是以fillRect的局部坐标系进行移动
+        ctx.translate(55, 50);
+        ctx.fillRect(0, 0, 130, 100);
+
+        //以下各项属性如fillStyle要重写，否则会以代码顺序自动获取之前代码属性，用函数包起也一样
+        //但其它的属性项是先获取 red 的属性，再在其上进行累加，如旋转就成为90，
+        ctx.fillStyle = 'green';
+        //ctx.rotate(45 * Math.PI / 180);
+        ctx.translate(10, 10);
+        ctx.fillRect(0, 0, 130, 100);
+
+        ctx.fillStyle = 'orange';
+        //虽然设了旋转，但为0，所以仍会以green的数值进行继承
+        //ctx.rotate(0 * Math.PI / 180);
+        ctx.translate(10, 10);
+        ctx.fillRect(0, 0, 130, 100);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <div>
+            <p>
+                AAA111
+            </p>
+        </div>
+
+    </div>
+<script>
+    function MyClass(){}
+    var mc = new MyClass();
+    console.log("aaa");
+
+    console.log(mc.__proto__);  //访问mc的原型对象
+    //console.log(mc.prototype);   此为错误示范，会报undefined
+    console.log(mc.__proto__==MyClass.prototype);  //比较MyClass与其实例mc的 prototype 是否相同，结果为true
+    //console.log(mc.prototype);   此为错误示范，会报undefined
+
+    MyClass.prototype.a="myclass中的a";   //向构造方法中添加a属性
+    MyClass.prototype.sayHello=function (){console.log("myclass:say,say");};   //向构造方法中添加sayHello方法，这里sayHello不用()
+    mc.a="mc中的a";
+    mc.sayHello=function (){console.log("mc:say,say");};
+    mc.sayHello();   //使用时要加()
+    var mydate=new Date();
+    Date.prototype
+
+
+  //Person.prototype.sayName=function (){"---这里是Person.sayName的this"_this.sayName();};
+
+
+</script>
+
+</body>
+
+
+</html>

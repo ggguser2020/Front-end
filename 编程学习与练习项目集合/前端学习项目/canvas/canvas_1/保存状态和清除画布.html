@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas_1" width="500" height="500">你的浏览器不支持Canvas!</canvas>
+
+    <script>
+        /**@type{HTMLCanvasElement}*/
+        const canvas = document.getElementById('canvas_1');
+        const ctx = canvas.getContext('2d');
+
+        //使用路径绘制的方式画出矩形并fill，以避免直接绘制图形无法进行新绘时所引起的属性传递的问题
+        ctx.fillStyle = 'red';
+        ctx.rect(0, 0, 130, 100);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = 'green';
+        ctx.rect(130, 100, 130, 100);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = 'orange';
+        ctx.rect(130, 200, 130, 100);
+        ctx.fill();
+
+    </script>
+</body>
+
+</html>

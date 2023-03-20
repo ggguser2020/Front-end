@@ -1,0 +1,15 @@
+body{    /* 标签选择器,js,css注释相同  */
+    background-color: #EAF6F6;
+}
+hr{
+    /*设了一个0高度不会显示的换行线，然后将换行线的边框设为虚线，且只显示四个边的顶边为 4px*/
+    border-style: dotted; /*css属性具有默值，border-style: inset;*/
+    border-color: grey;
+    border-width: 4px 0 0 0; /*控制四周边框的大小 */
+    height: 0; /*影响background-color，设为0，线条将没有高度，只会显示边框等*/
+    width: 20%;  /*百分比基于上级元素*/
+
+}
+h1,h3{
+    color: #66BFBF;
+}

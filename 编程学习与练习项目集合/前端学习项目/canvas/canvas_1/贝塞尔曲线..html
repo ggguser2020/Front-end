@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas_1" width="600" height="800"></canvas>
+
+    <script>
+        //二次贝塞尔曲线，1个控制点
+        let canvas = document.getElementById("canvas_1");
+        let ctx = canvas.getContext("2d");
+        ctx.strokeStyle = "#1572b5";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(150, 250);
+        ctx.quadraticCurveTo(300, 100, 450, 250);
+        ctx.stroke();
+       // ctx.closePath();
+
+        //三次贝塞尔曲线,2个控制点
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.moveTo(150, 350);
+        ctx.bezierCurveTo(240, 200, 300, 430, 461, 350);
+        ctx.stroke();
+       // ctx.closePath();
+    </script>
+</body>
+
+</html>

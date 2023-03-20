@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas{
+            border: 2px solid rebeccapurple;
+            display: inline-block;
+        }
+
+        p{
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas_1" width="600px" height="400px"></canvas>
+
+<img src="../grapefruit-slice-332-332.jpg" alt="A">
+<img src="../grapefruit-slice-332-332.jpg" alt="A">
+<img src="../grapefruit-slice-332-332.jpg" alt="A">
+
+<p>此精简专注版与 【每月完成.xlsx】结合的制作此精简专注版与 【每月完成.xlsx】结合的制作此精简专注版与 【每月完成.xlsx】结合的制作此精简专注版与 【每月完成.xlsx】结合的制作</p>
+
+<script defer>
+
+draw();
+
+function draw() {
+    //使用/**@type{HTMLCanvasElement}*/ 后，上方getContext（）仍报【Unresolved function or method getContext()】，
+    // 使用连写时IDE找不到，要分开写，并确保每个获取canvas dom对象加入 /**@type{HTMLCanvasElement}*/
+    /**@type{HTMLCanvasElement}*/
+  let can=document.getElementById('canvas_1').getContext('2d');
+
+    /**@type{HTMLCanvasElement}*/
+   let can1=document.getElementById('canvas_2');
+   let can2=can1.getContext('2d');
+}
+can2.beiginPath();
+can2.strokeStyle='black';
+can2.linewidth='2';
+        // ctx.moveto(2*gridwidth,2*gridheight);
+        // ctx.lineTo(2*gridwidth+5,2*gridheight+10);
+        // ctx.lineTo(2*gridwidth-5,2*gridheight-10);
+        // ctx.fill();
+        can2.moveto(60,60);
+        can2.lineTo(90,90);
+        can2.lineTo(30,90);
+        //如果是路径，且未关闭，fill()会自动用一条直线连首尾
+        can2.fill();
+</script>
+</body>
+</html>

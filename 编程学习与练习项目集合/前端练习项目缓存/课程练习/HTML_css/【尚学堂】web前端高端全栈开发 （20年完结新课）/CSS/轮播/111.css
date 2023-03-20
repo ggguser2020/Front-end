@@ -1,0 +1,41 @@
+.box{
+ width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+}
+.img{
+    width: 100%;
+}
+.left,.right{
+    width: 41px;
+    height:69px;
+    background-color: rgb(81, 136, 118);
+    position: absolute;
+    top: 50%;
+    wi
+    margin-top: -35px;
+}
+.right {
+    right: 0;
+}
+.left{
+    left: 0;
+}
+.ul_circle{
+    top: 419px;
+    right: 30px;
+    bottom: 20px;
+    position: absolute;
+}
+.ul_circle>li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid rgba(255,255,255,.3);
+    background-color: rgba(0,0,0,.4);
+    border-radius: 50%;
+    list-style-type: none;
+    float: left;
+    margin: 0 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<h1>My Contact Details</h1>
+<p>My Fictional Address</p>
+<p>077263718463</p>
+<p>myemail@gmail.com</p>
+<hr>
+<!--下方的enctype="text/plain属性可防止邮件中乱码-->
+<form action="mailto:info@londonappbrewery.com" method="post" enctype="text/plain"> 
+    <label>Your Name:  <!--将<input></input>标签放入<label>中可以避免编辑器提示：表单全入没有相关的label-->
+        <input type="text" name="yourname"><br>
+    </label>
+    <label for="youremail">Your Email:</label>   <!--for属性与下方input标签中的id元素进行了绑定-->
+    <input type="email" name="youremail" id="youremail"><br>
+    <label for="">Your Message:</label><br>
+    <textarea name="yourMessage" id="" rows="10" cols="30"></textarea><br>
+    <input type="submit"><br>
+    <label for=""></label>
+</form>
+
+</body>
+</html>

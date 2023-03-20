@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script src="bom1.js" type="text/javascript"></script>-->
+</head>
+
+<body>
+    <button onclick="myConfirm()">windows.confirm</button>
+    <p id="text"></p>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function aaa() {
+        let a = 1;
+        if (1) {
+            a++;
+            console.log(`if a=${a}`);  //`xxxx${}xxxx`  `为ESC下方的反引号
+        }
+    }
+    aaa();
+    console.log("aaaaaaaaa");
+
+    let y;
+    function myConfirm() {
+        if (window.confirm("11111")) {
+            y = "确认"
+        } else {
+            y = "取消";
+        }
+        document.getElementById("text").innerHTML = y;
+    }
+</script>

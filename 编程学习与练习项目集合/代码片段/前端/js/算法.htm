@@ -1,0 +1,28 @@
+<!-- 九九乘法表  计时器-->
+<script>
+    console.time("123"); //123为计时器名称
+    //九九乘法表
+    for (let i = 1; i < 10; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("<span>" +
+                j + "*" + i + "=" + i * j +
+                "</span>")
+        }
+        document.write("<br>")
+    }
+    console.timeEnd("123"); //123为计时器名称
+</script>
+
+<!--水仙水算法-->
+<script>
+    console.log("水仙水算法")
+    let bai, shi, ge;
+    for (let i = 100; i < 1000; i++) {
+        bai = parseInt(i / 100);
+        shi = parseInt(i % 100 / 10);
+        ge = i % 10;
+        if (i == ((bai * bai * bai) + (shi * shi * shi) + (ge * ge * ge))) {
+            console.log(i);
+        }
+    }
+</script>

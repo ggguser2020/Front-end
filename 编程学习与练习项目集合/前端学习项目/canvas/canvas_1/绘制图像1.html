@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 2px gray solid;
+
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas_1" width="600" height="1600"></canvas>
+    <div id="div_1"></div>
+
+
+    <script defer>
+        /**@type{HTMLCanvasElement} */
+        const context = document.getElementById('canvas_1');
+        const ctx = context.getContext('2d');
+
+
+        //第一种方式，用Image对像
+        const img = new Image();
+        img.src = 'img1.png';  //设置图像的路径
+
+        try {
+            img.onload = img1_onload => {   //onload是一个img的全局事件，一般用于在确认图像完全载入后做什么。
+                //drawImage()0，0表示图像左上角所在位置，且此方法还有其它参数可选，如设置图像宽度，是否剪切
+                ctx.drawImage(img, 0, 0, 222, 300);
+            }
+        } catch (InvalidStateError) {
+            console.log("111");
+        }
+
+
+        //MDN方式
+        const img2 = new Image();
+        img2.src = 'img1.png';
+        img.addEventListener('load', (e) => {
+            try {   //ctx.drawImage(img, 0, 0);如像上方写在内部的话不会被catch到
+                ctx.drawImage(img2, 0, 300);  //坐标不能和上方的重重，不然看不出来
+
+            } catch (InvalidStateError) {
+                console.log("222");
+            }
+        });
+    </script>
+</body>
+
+</html>
