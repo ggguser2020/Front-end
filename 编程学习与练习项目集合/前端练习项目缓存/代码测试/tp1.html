@@ -8,19 +8,48 @@
     <title>Document</title>
 
     <style>
-        .mar0{
-            margin:0;
+        #one{
+            /*1、块元素独占一行（一行只能存在一个）；
+            2、不设"width“属性，其它各种选择器中也未定义时，默认使用上级元素的宽度属性---浏览器行宽
+            3、慎用标签选择器或多各选择器默认值相互干扰的问题！下边#one样式中没有设”width“属性时，
+            会自动其它定义样式中找，在本例中DIV标签选择器中找到并借用了它的"width"属性，
+            如其它地方也没有找到，会默认使用上级元素的宽度属性---浏览器行宽。
+            4、不设"width"属性，同时display为行内块inline-block时，width=盒模型中的内容（此例中为字符）宽度。
+             */
+
+            /*width: 100px;*/
+            height: 100px;
+            background-color:skyblue;
+            border: 50px orangered solid;
+            padding: 50px;
+            margin: 50px;
+            display: inline-block;
+        }
+        div{
+            /*width: 100px;*/
+            height: 100px;
+            background-color:skyblue;
+            border: 50px orangered solid;
+            padding: 50px;
+            margin: 50px;
+            display: inline-block;
+            /*vertical-align:top*/
         }
     </style>
 </head>
-<body class="mar0">
+<!--<body style="font-size: 0">-->
+<body>
+<div id="one">ID_one</div>
+<div class="two">CLASS_two</div>
 
-<script>
-    let square = document.createElement("div");
-    square.style.width = "100px";
-    square.style.height = "100px";
-    square.style.backgroundColor = "red";
-    document.body.appendChild(square);
-</script>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
