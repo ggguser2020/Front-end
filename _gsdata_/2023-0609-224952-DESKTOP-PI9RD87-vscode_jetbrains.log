@@ -1,0 +1,13 @@
+2023-06-09 22:49:53: -- 分析开始 On File Change, After Delay
+2023-06-09 22:49:53: 变更：8， 冲突：0， 复制时间：0， 复制状态：0， 错误： 0, All: 1758
+2023-06-09 22:49:53: Left to Right: Copy File: 8 
+2023-06-09 22:49:53: == 同步开始由 On File Change, After Delay
+2023-06-09 22:49:53: 新建复制 'C:/Users/79920/MyFiles/Front-end/.git/objects/49/a268ba3a7aaa96a31376a20ac55ceea27a3215' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/.git/objects/49/a268ba3a7aaa96a31376a20ac55ceea27a3215' (176)
+2023-06-09 22:49:53: 覆盖复制 'C:/Users/79920/MyFiles/Front-end/.git/COMMIT_EDITMSG' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/.git/COMMIT_EDITMSG' (935)
+2023-06-09 22:49:53: 覆盖复制 'C:/Users/79920/MyFiles/Front-end/.git/index' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/.git/index' (120,343)
+2023-06-09 22:49:53: 新建复制 'C:/Users/79920/MyFiles/Front-end/.git/objects/59/072a5073692777f9d6cfe29866335cd07f5395' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/.git/objects/59/072a5073692777f9d6cfe29866335cd07f5395' (891)
+2023-06-09 22:49:53: 新建复制 'C:/Users/79920/MyFiles/Front-end/.git/objects/71/09269900d53ba879b19211ed64e58dda59086a' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/.git/objects/71/09269900d53ba879b19211ed64e58dda59086a' (211)
+2023-06-09 22:49:53: 新建复制 'C:/Users/79920/MyFiles/Front-end/.git/objects/c5/85c709bc1885264ecb56707b0bd9ef7a61323f' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/.git/objects/c5/85c709bc1885264ecb56707b0bd9ef7a61323f' (107)
+2023-06-09 22:49:53: 新建复制 'C:/Users/79920/MyFiles/Front-end/.git/objects/ed/76941fb949707342aaf9a7ca12b1fc86303083' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/.git/objects/ed/76941fb949707342aaf9a7ca12b1fc86303083' (136)
+2023-06-09 22:49:53: 覆盖复制 'C:/Users/79920/MyFiles/Front-end/编程学习与练习项目集合/前端练习项目缓存/代码测试/tp1.html' -> 'D:/myfiles_back/FrontEnd-vscode复制代码用/编程学习与练习项目集合/前端练习项目缓存/代码测试/tp1.html' (1,784)
+2023-06-09 22:49:53: == 同步完成. 历时: 00:00:01, 速度: 0.00/s, 完成: 8, 错误: 0
