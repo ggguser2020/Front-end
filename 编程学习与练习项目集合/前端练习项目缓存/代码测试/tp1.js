@@ -1,10 +1,1 @@
-var square = document.createElement("div");
-square.style.width = "100px";
-square.style.height = "100px";
-square.style.backgroundColor = "red";
-square.style.position = "absolute";
-square.style.top = "50%";
-square.style.left = "50%";
-square.style.marginTop = "-50px";
-square.style.marginLeft = "-50px";
-document.body.appendChild(square);
+console.log(1+1);

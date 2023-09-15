@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日历-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /*修改默认的CSS盒，元素的大小设为100%时等于上级元素的大小，另外border,padding不会向扩展，而是向内压缩HTML内容*/
+            box-sizing: border-box;
+            font-family: Poppins,sans-serif;
+        }
+        .background{
+            width: 100%;
+            min-height: 100vh; /* 设置最小高度，以及Viewport Height为视图窗口的100% */
+            background-color: gray;
+            display: flex;  /*设元素为弹性盒，使子元素成为弹性项*/
+            align-items: center;    /*设置子节点的align-self*/
+            justify-content: center;
+        }
+        .calendar{
+            width: 300px;
+            height: 250px;
+            background-color: rgba(0,0,0,0);  /*设置背景透明*/
+            align-items: center;
+            display: flex;
+        }
+        .left,.right{
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;     /*设置弹性盒当前对象的内容垂直显示*/
+        }
+        .left{
+            width: 60%;
+            border-top-left-radius: 5%;
+            border-bottom-left-radius: 5%;
+            background-color: white;
+            font-size: 30px;
+        }
+        .right{
+            width: 40%;
+            margin: 5px 0;
+            /*hsl（Hue，Saturation，Lightness，Brightness）色相最大360不断循环，饱和度，明度,
+            另外每个颜色范围一般在30以内*/
+            background-color: hsl(12, 80%, 50%);
+            border-top-right-radius: 5%;
+            border-bottom-right-radius: 5%;
+
+            font-weight: 10;/*用属性或数值（似乎最大999）设定同字体粗细*/
+            font-size: 24px;
+        }
+        #days{
+            font-size: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="background">
+
+    <div class="calendar">
+        <div class="left">
+            <p id="days">01</p>
+            <p id="week">Sunday</p>
+        </div>
+        <div class="right">
+            <p id="month">January</p>
+            <p id="year">2020</p>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    const e_days=document.getElementById('days');
+    const e_week=document.getElementById('week');
+    const e_month=document.getElementById('month');
+    const e_year=document.getElementById('year');
+
+
+    const arrWeek=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    const arrMonth=['January','February','March','April','May','June','July','August','September','October','November','December']
+
+
+    const e_date=new Date();
+
+    // 这些时间函数没参表示返回当前时间的对应值，有参返回指定日期的对应值，
+    // const moonLanding = new Date('July 20, 69 00:20:18');
+    // console.log(moonLanding.getFullYear());
+    // Expected output: 1969
+    e_days.innerHTML=(e_date.getDate()<10?"0":"")+e_date.getDate();   /*getDate返回一个月中的第几天,1-31*/
+    e_week.innerHTML=arrWeek[e_date.getDay()];  /*getDay返回的的是一周的第几天0为星期天*/
+    e_month.innerHTML=arrMonth[e_date.getMonth()];    /*返回月份，0 表示一年中的第一月*/
+    e_year.innerHTML=e_date.getFullYear().toString();
+
+
+
+
+</script>
+</body>
+</html>

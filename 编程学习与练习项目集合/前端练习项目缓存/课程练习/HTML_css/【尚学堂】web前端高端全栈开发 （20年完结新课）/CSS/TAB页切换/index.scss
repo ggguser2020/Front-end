@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.container {
+  .nav {
+    > li {
+      width: 20%;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      vertical-align: center;
+      font-size: 16px;
+      display: inline-block;
+      background-color: #ff670f;
+    }
+
+    > .active {
+      background-color: #307030;
+      color: white;
+    }
+  }
+
+  .box {
+    width: 100%;
+    height: 400px;
+    font-size: 16px;
+    text-align: center;
+    background-color: palegoldenrod;
+  }
+
+}

@@ -43,7 +43,7 @@
         const img2 = new Image();
         img2.src = 'img1.png';
         img.addEventListener('load', (e) => {
-            try {   //ctx.drawImage(img, 0, 0);如像上方写在内部的话不会被catch到
+            try {   //ctx.drawImage(旋转可乐, 0, 0);如像上方写在内部的话不会被catch到
                 ctx.drawImage(img2, 0, 300);  //坐标不能和上方的重重，不然看不出来
 
             } catch (InvalidStateError) {

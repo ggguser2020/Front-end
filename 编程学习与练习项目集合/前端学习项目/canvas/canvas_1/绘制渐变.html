@@ -34,9 +34,12 @@
         ctx.strokeStyle =gdient;
         ctx.strokeRect(300, 20, 200, 100);
 
-        //第二行的矩形,颜色不会保持100级的纯色
+        //第二行的矩形,因为设置了相同的渐变，所以颜色会同延续第一矩形渐变，第二行的边框渐变也是
         ctx.fillStyle=gdient;
         ctx.fillRect(20,140,200,100);
+
+        ctx.strokeStyle =gdient;
+        ctx.strokeRect(300, 140, 200, 100);
     </script>
 </body>
 

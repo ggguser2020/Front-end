@@ -1,7 +1,7 @@
 let imgArr = ["1.jpg", "2.webp", "3.webp"];
 let left = document.querySelector(".left");
 let right = document.querySelector(".right");
-let img = document.querySelector(".img");
+let img = document.querySelector(".旋转可乐");
 let li_list=document.querySelectorAll(".ul_circle>li");
 
 let i = 0;
@@ -11,7 +11,7 @@ left.onclick = function () {
     if (i < 0) {
         i = imgArr.length - 1;
     }
-    img.src = "img/" + imgArr[i];
+    img.src = "旋转可乐/" + imgArr[i];
 }
 left.onclick=function
 
@@ -20,13 +20,13 @@ right.onclick = function () {
     if (i > imgArr.length - 1) {
         i = 0;
     }
-    img.src = "img/" + imgArr[i];
+    img.src = "旋转可乐/" + imgArr[i];
     fn(li_list[i]);
 }
 function fn(index){
     for (let i=0;i<imgArr.length;i++) {
         if (i ==index){
-            img.src = "img/" + imgArr[i];
+            img.src = "旋转可乐/" + imgArr[i];
             
             li_list[i].style.borderColor="rgba(0,0,0,.4)";
             li_list[i].style.backgroundColor="rgba(255,255,255,.3)";

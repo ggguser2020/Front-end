@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .d-grid {
+            width: 100vw;
+            height: 100vh;
+            background-color: #c5e8d9;
+            display: grid;  /*指定这个div容器使用网格布局*/
+            grid-template-rows: 1fr 2fr 3fr;    /*行数为：3行*/
+            grid-template-columns: 1fr 1fr 1fr 1fr; /*列数：4列*/
+            /*gap 属性是用来设置网格行与列之间的间隙（gutters），该属性是 row-gap 和 column-gap 的简写形式。*/
+            gap: 15px;
+
+        }
+        .item{
+            border: 1px solid WHITE;
+            background-color: #af776b;
+        }
+
+        .item1{
+            /*.所有的类名为.item1的div网格宽度等于2个fr */
+            grid-column: span 2;
+        }
+        .item2{
+            /*所有的类名为.item2的div网格高度等于2个fr */
+            grid-row: span 2;
+        }
+        .item3{
+            grid-row: span 2;
+        }
+        .item4{
+            grid-column: span 3;
+        }
+        .top1-top2{
+            width: 600px;
+            height: 600px;
+            background-color: #239cb6;
+            position: relative;
+        }
+        .top1{
+            width: 100px;
+            height: 100px;
+            background-color: #afafaf;
+            position: absolute;
+            left:50px;
+            top:50px;
+            /*z-index: 10;*/
+            display: inline-block;
+        }
+        .top2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left:65px;
+            top:65px;
+            /*z-index: 9;*/
+            display: inline-block;
+            background-color: #565656;
+        }
+
+    </style>
+</head>
+<body>
+<div class="d-grid">
+    <div class="item">item1</div>
+<!--    此使用的样式有2个item 与 tem1-->
+    <div class="item item1">item11</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+    <div class="item">item4</div>
+    <div class="item">item5</div>
+    <div class="item item4">item6</div>
+</div>
+<div class="top1-top2">
+    <div class="top1">top1</div>
+    <div class="top2">top2</div>
+
+</div>
+
+
+</body>
+</html>
