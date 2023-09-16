@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.food {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.food div {
+  flex-grow: 1;
+  text-align: center;
+}
+.food div a {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+.food div a img {
+  min-width: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
